@@ -1,11 +1,14 @@
 {
   "name": "vite-react-typescript-starter",
+  "homepage": "https://angelct5.github.io/ai-image-detector",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
